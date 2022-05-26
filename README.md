@@ -2,11 +2,13 @@
 https://argo-cd.readthedocs.io/en/stable/
 
 This repository contains the presented examples from the SQUER internal Brainfood Session in May 2022.
-It gives a gentle introduction to ArgoCD, lists some interesting reads and might help getting started with a GitOps approach.
+It gives a gentle introduction to ArgoCD and might help getting started with the GitOps approach by providing an environment
+for playing around and exploring ArgoCD.
 
 ## Prerequisites
 + k3d installed (``brew install k3d``)
 + (Optional) argocd cli installed (``brew install argocd``)
++ (Recommended) Watch Nana on Youtube: https://www.youtube.com/watch?v=MeU5_k9ssrs
 
 ## Local Cluster Setup
 
