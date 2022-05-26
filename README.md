@@ -6,6 +6,7 @@ It gives a gentle introduction to ArgoCD, lists some interesting reads and might
 
 ## Prerequisites
 + k3d installed (https://k3d.io/)
++ (Optional) argocd cli installed (``brew install argocd``)
 
 ## Local Setup
 
@@ -17,8 +18,11 @@ Running ``kubectl get pods -A`` shows you all the pods running on your newly cre
 ``argocd`` starting with the name ``argocd-server-*`` is in status ``Running``, you can execute the following command to access the
 argocd-ui:
 
-``make argo-ui``
+``make expose-argo``
 
-This allows you to access the argo-ui at https://localhost:8080 . The username is per default ``admin`` and the password can be 
-retrieved via ``make show-password``
+This allows you to access argo at https://localhost:8080 . The username is per default ``admin`` and the password can be 
+retrieved via ``make show-password``. You can either use the argo-ui from the browser or the the argocd-cli using the commandline.
+For using the cli you simply enter ``argocd login localhost:8080`` for authentication.
+
+
 

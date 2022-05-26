@@ -10,7 +10,7 @@ create-cluster:
 delete-cluster:
 	k3d cluster delete argo-bfs
 
-argo-ui:
+expose-argo:
 	kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 show-password:
